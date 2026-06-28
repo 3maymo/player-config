@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "updateTime": "2026-06-28",
+  "sites": [
+    {
+      "name": "示例站点",
+      "baseUrl": "https://www.example.com",
+      "enabled": false,
+      "listRule": {
+        "url": "/movies",
+        "itemSelector": ".video-item a",
+        "titleSelector": ".title",
+        "linkAttr": "href",
+        "pageParam": "page",
+        "pageStart": 1
+      },
+      "detailRule": {
+        "videoSelector": "video source",
+        "videoAttr": "src"
+      }
+    }
+  ]
+}
