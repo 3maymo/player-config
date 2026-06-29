@@ -6,27 +6,29 @@
   "version": "1.0",
   "updateTime": "2026-06-29",
   "sites": [
+  {
+  "version": "1.0",
+  "updateTime": "2026-06-29",
+  "sites": [
     {
-      "name": "HiTV",
-      "baseUrl": "https://www.hitv.app",
+      "name": "百度测试",
+      "baseUrl": "https://www.baidu.com",
       "enabled": true,
       "listRule": {
-        "url": "/vodtype/1.html",
-        "method": "html",
-        "itemSelector": ".module-item .module-item-pic a",
-        "titleSelector": ".module-item .module-item-title",
+        "url": "/",
+        "itemSelector": "#s-top-left a",
+        "titleSelector": "",
         "linkAttr": "href",
-        "pageParam": "page",
+        "pageParam": "",
         "pageStart": 1
       },
       "detailRule": {
         "videoSelector": "video source",
-        "videoAttr": "src",
-        "fallbackSelector": "iframe",
-        "fallbackAttr": "src"
-      },
-      "note": "自动抓取规则，如失效请调整选择器"
+        "videoAttr": "src"
+      }
     }
+  ]
+}
   ]
 }
   ]
