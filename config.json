@@ -1,8 +1,5 @@
 {
   "version": "1.0",
-  "updateTime": "2026-06-28",
-  "sites": [{
-  "version": "1.0",
   "updateTime": "2026-06-29",
   "sites": [
     {
@@ -23,25 +20,6 @@
         "videoAttr": "src"
       },
       "note": "纯抓取测试"
-    }
-  ]
-}
-    {
-      "name": "示例站点",
-      "baseUrl": "https://www.example.com",
-      "enabled": true,
-      "listRule": {
-        "url": "/movies",
-        "itemSelector": ".video-item a",
-        "titleSelector": ".title",
-        "linkAttr": "href",
-        "pageParam": "page",
-        "pageStart": 1
-      },
-      "detailRule": {
-        "videoSelector": "video source",
-        "videoAttr": "src"
-      }
     }
   ]
 }
