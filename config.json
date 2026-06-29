@@ -2,24 +2,32 @@
   "version": "1.0",
   "updateTime": "2026-06-29",
   "sites": [
+   {
+  "version": "1.0",
+  "updateTime": "2026-06-29",
+  "sites": [
     {
-      "name": "测试源（百度）",
-      "baseUrl": "https://www.baidu.com",
+      "name": "HiTV",
+      "baseUrl": "https://www.hitv.app",
       "enabled": true,
       "listRule": {
-        "url": "/",
+        "url": "/vodtype/1.html",
         "method": "html",
-        "itemSelector": "#s-top-left a",
-        "titleSelector": "",
+        "itemSelector": ".module-item .module-item-pic a",
+        "titleSelector": ".module-item .module-item-title",
         "linkAttr": "href",
-        "pageParam": "",
+        "pageParam": "page",
         "pageStart": 1
       },
       "detailRule": {
         "videoSelector": "video source",
-        "videoAttr": "src"
+        "videoAttr": "src",
+        "fallbackSelector": "iframe",
+        "fallbackAttr": "src"
       },
-      "note": "纯抓取测试"
+      "note": "自动抓取规则，如失效请调整选择器"
     }
+  ]
+}
   ]
 }
