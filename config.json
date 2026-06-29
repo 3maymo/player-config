@@ -5,7 +5,7 @@
     {
       "name": "示例站点",
       "baseUrl": "https://www.example.com",
-      "enabled": false,
+      "enabled": true,
       "listRule": {
         "url": "/movies",
         "itemSelector": ".video-item a",
